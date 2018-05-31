@@ -16,6 +16,12 @@ div{
 }
 header{
   background: IndianRed;
+  text-align: right;
+  font-size: 24px;
+  color: white;
+}
+nav{
+  background: IndianRed;
   color: white;
   text-align: center;
   padding: 5% 0 1% 0;
