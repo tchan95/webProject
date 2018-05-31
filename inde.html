@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
+    <title></title>
+    <script type="text/javascript">
+    function GetCookie(name) {
+       var str = name+"=";
+       var pairs = document.cookie.split(";");
+       for(var i=0; i<pairs.length; i++) {
+       var pair = pairs[i].trim();
+       var unit = pair.split("=");
+       if(unit[0] == name)
+         return unescape(unit[1]);
+        }
+       return null;
+      }
+       function SetCookie (name, value, expireDate) {
+        var cookieStr = name + "=" + escape(value) +
+         ((expireDate == null)?"":("; expires=" + expireDate.toGMTString()));
+         document.cookie = cookieStr;
+      }
+    </script>
+    <script type="text/javascript">
+        var username = GetCookie("username");
+        var expire = new Date();
+
+        if(username == null){
+          username = prompt("이름을 입력해 주세요.","");
+        if(username == null){
+          alert("이름을 입력하지 않으셨으므로 종료됩니다.");
+          window.open('about:blank','_self').self.close();
+        }else {
+          expire.setTime(expire.getTime()+(365*24*3600*1000));
+          SetCookie("username",username,expire);
+        }
+      }
+      expire.setTime(expire.getTime()+(365*24*3600*1000));
+      document.write('<p></p>');
+    </script>
+  </head>
+  <body>
+    <header class="header-font">
+      <script type="text/javascript">
+        var dates = new Date();
+        document.write(dates.toLocaleDateString()+'<br>');
+        document.write(dates.toLocaleTimeString()+'<br>');
+        document.write(username+"님의 접속을 환영합니다!");
+        document.write("<br><br>");
+      </script>
+    </header>
+    <div class="row container">
+      <div class="img container">
+        <img src="img/youtube.png" alt="">
+      </div>
+      <div class="description container" style="margin-bottom:5%;">
+
+        <h1 class="tablet-font2">Youtube Mp3 Converter</h1>
+        <span class="tablet-font gone">아래의 영상을 mp3파일로 다운로드 합니다<br></span>
+        <span class="tablet-font">링크를 입력해 주세요!</span>
+      </div>
+      <div class="link">
+        <p><span class="link">유튜브 링크 입력</span> : <input type="text" name="link"></p>
+      </div>
+      <br><br>
+      <div class="row">
+        <button class="col-sx-12" id="buton" type="submit" name="button" onclick="process()">다운로드</button>
+        <button class="col-sx-12" id="buton2" type="button" name="but" onclick="location.href='http://localhost/converter/list.php'">목록보기</button>
+      </div>
+    </div>
+    <script type="text/javascript">
+
+    function process(){
+    document.getElementById("buton").innerHTML = "다운로드중입니다... 잠시만 기다려주세요";
+    document.getElementById("buton2").style.display = "none";
+    }
+
+    </script>
+
+  </body>
+</html>

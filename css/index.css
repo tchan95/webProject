@@ -4,49 +4,220 @@ html,body{
   margin : 0;
   padding : 0;
   font-family: 'Poor Story', cursive;
-
+  font-size: 0.7em;
+  background-color: black;
 }
+
 div{
   text-align: center;
   color:white;
-  height: 1000px;
-  background: linear-gradient(IndianRed,#C9C9C9,white);
   margin-top: 0;
-
+  background-color: rgba(255,255,255,0);
 }
 header{
-  background: IndianRed;
   text-align: right;
-  font-size: 24px;
   color: white;
 }
+
 nav{
-  background: IndianRed;
   color: white;
   text-align: center;
   padding: 5% 0 1% 0;
   margin-bottom: 0;
+}
+.col-1{
+  width: 8.33333333%;
+}
+.col-2{
+  width: 16.6666667%;
+}
+.col-3{
+  width: 25%;
+}
+.col-4{
+  width: 33.3333333%;
+}
+.col-5{
+  width: 41.6666667%;
+}
+.col-6{
+  width: 50%;
+}
+.col-7{
+  width: 58.3333333%;
+}
+.col-8{
+  width: 66.6666667%;
+}
+.col-9{
+  width: 75%;
+}
+.col-10{
+  width: 83.3333333%;
+}
+.col-11{
+  width: 91.6666667%;
+}
+.col-12{
+  width: 100%;
+}
+span{
+  margin:0 auto;
+  margin-bottom:5%;
+}
 
-}
-img{
-  width: 12%;
-}
 button{
+  width: 30%;
   font-family: 'Poor Story', cursive;
   border-radius: 15px;
   padding:15px 50px 15px 50px;
   border: none;
-  background-color: Red;
+  background-color: rgb(225,77,67);
   color: white;
   font-size: 1.2em;
+  margin-bottom:1%;
 }
 button:hover{
   background-color: rgba(225,77,67,0.5);
 }
 input{
-  width: 30%;
+  width: 50%;
   height: 30px;
 }
 .container{
+  margin:0 auto;
+  width: 80%;
   font-size: 2em;
+}
+.link{
+  font-size: 1.2em;
+}
+
+/* 연습 */
+.b1,.b2,.b3,.b4{
+  height: 200px;
+}
+img{
+  width: 23%;
+}
+.row:after{
+  clear:both;
+  box-sizing: border-box;
+  display: block;
+}
+.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{
+  float: left;
+}
+.col-1{
+  width: 8.33333333%;
+}
+
+.col-2{
+  width: 16.6666667%;
+}
+.col-3{
+  width: 25%;
+}
+.col-4{
+  width: 33.3333333%;
+}
+.col-5{
+  width: 41.6666667%;
+}
+.col-6{
+  width: 50%;
+}
+.col-7{
+  width: 58.3333333%;
+}
+.col-8{
+  width: 66.6666667%;
+}
+.col-9{
+  width: 75%;
+}
+.col-10{
+  width: 83.3333333%;
+}
+.col-11{
+  width: 91.6666667%;
+}
+.col-12{
+  width: 100%;
+}
+@media screen and (max-width:1440px){
+  img{
+    width: 38%;
+  }
+}
+@media screen and (max-width:1024px){
+  img{
+    width: 38%;
+  }
+}
+@media screen and (max-width:768px){
+  .gone{
+    display: none;
+  }
+  .tablet-font{
+    font-size: 0.8em;
+  }
+  .tablet-font2{
+    font-size: 1.5em;
+  }
+  img{
+    width: 50%;
+  }
+  .col-sx-1{
+    width: 8.33333333%;
+  }
+  .col-sx-2{
+    width: 16.6666667%;
+  }
+  .col-sx-3{
+    width: 25%;
+  }
+  .col-sx-4{
+    width: 33.3333333%;
+  }
+  .col-sx-5{
+    width: 41.6666667%;
+  }
+  .col-sx-6{
+    width: 50%;
+  }
+  .col-sx-7{
+    width: 58.3333333%;
+  }
+  .col-sx-8{
+    width: 66.6666667%;
+  }
+  .col-sx-9{
+    width: 75%;
+  }
+  .col-sx-10{
+    width: 83.3333333%;
+  }
+  .col-sx-11{
+    width: 91.6666667%;
+  }
+  .col-sx-12{
+    width: 100%;
+  }
+  .col-sx-12{
+    width: 100%;
+  }
+}
+@media screen and (max-width:412px){
+  img{
+    width: 68%;
+  }
+}
+@media screen and (max-width:320px){
+  img{
+    width: 100%;
+  }
+  .tablet-font2{
+    font-size: 0.9em;
+  }
 }
