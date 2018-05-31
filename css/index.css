@@ -10,18 +10,18 @@ div{
   text-align: center;
   color:white;
   height: 1000px;
-  background: linear-gradient(IndianRed,#C9C9C9,white);
+  background: linear-gradient(black,#C9C9C9,white);
   margin-top: 0;
 
 }
 header{
-  background: IndianRed;
+  background: black;
   text-align: right;
   font-size: 24px;
   color: white;
 }
 nav{
-  background: IndianRed;
+  background: black;
   color: white;
   text-align: center;
   padding: 5% 0 1% 0;

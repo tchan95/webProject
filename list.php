@@ -3,8 +3,6 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="css/index.css">
-    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
     <title>Youtube Mp3 Converter</title>
   </head>
