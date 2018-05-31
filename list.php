@@ -36,7 +36,7 @@
     <br>
     <br>
     <br>
-      <button type="button" name="bun" onclick="location.href='http://localhost/converter/index.html'">메인화면</button>
+      <button type="button" name="bun" onclick="location.href='index.html'">메인화면</button>
     </div>
    </div>
   </body>
