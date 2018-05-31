@@ -8,9 +8,8 @@
   </head>
   <body>
     <div class="container">
-      <nav><h1>다운로드 목록</h1></nav>
+      <nav><h1>다운로드 목록</h1><h6>중복으로 다운로드된 파일은 삭제됩니다.</h6></nav>
       <div>
-        <br>
         <br>
     <?php
     exec("dir c:\YoutubeMusic | findstr .mp3",$find); // 파일 찾기
@@ -31,6 +30,7 @@
       }
     }
     ?>
+    <br>
     <br>
     <br>
     <br>
